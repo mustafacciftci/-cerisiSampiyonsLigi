@@ -67,11 +67,11 @@ namespace İcerisiSampiyonsLigi
             // 
             // btnTakımaRenk
             // 
-            this.btnTakımaRenk.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnTakımaRenk.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnTakımaRenk.FlatAppearance.BorderSize = 0;
             this.btnTakımaRenk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTakımaRenk.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnTakımaRenk.Location = new System.Drawing.Point(158, 397);
+            this.btnTakımaRenk.Location = new System.Drawing.Point(146, 366);
             this.btnTakımaRenk.Margin = new System.Windows.Forms.Padding(0);
             this.btnTakımaRenk.Name = "btnTakımaRenk";
             this.btnTakımaRenk.Size = new System.Drawing.Size(92, 41);
@@ -82,11 +82,11 @@ namespace İcerisiSampiyonsLigi
             // 
             // btnTakımEkle
             // 
-            this.btnTakımEkle.BackColor = System.Drawing.Color.Turquoise;
+            this.btnTakımEkle.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnTakımEkle.FlatAppearance.BorderSize = 0;
             this.btnTakımEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTakımEkle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnTakımEkle.Location = new System.Drawing.Point(425, 397);
+            this.btnTakımEkle.Location = new System.Drawing.Point(385, 362);
             this.btnTakımEkle.Margin = new System.Windows.Forms.Padding(0);
             this.btnTakımEkle.Name = "btnTakımEkle";
             this.btnTakımEkle.Size = new System.Drawing.Size(92, 41);
@@ -97,11 +97,11 @@ namespace İcerisiSampiyonsLigi
             // 
             // bntDuzenle
             // 
-            this.bntDuzenle.BackColor = System.Drawing.Color.SaddleBrown;
+            this.bntDuzenle.BackColor = System.Drawing.Color.DodgerBlue;
             this.bntDuzenle.FlatAppearance.BorderSize = 0;
             this.bntDuzenle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntDuzenle.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.bntDuzenle.Location = new System.Drawing.Point(641, 397);
+            this.bntDuzenle.Location = new System.Drawing.Point(385, 481);
             this.bntDuzenle.Margin = new System.Windows.Forms.Padding(0);
             this.bntDuzenle.Name = "bntDuzenle";
             this.bntDuzenle.Size = new System.Drawing.Size(92, 41);
@@ -116,7 +116,7 @@ namespace İcerisiSampiyonsLigi
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(644, 465);
+            this.button4.Location = new System.Drawing.Point(644, 313);
             this.button4.Margin = new System.Windows.Forms.Padding(0);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(92, 41);
@@ -127,7 +127,7 @@ namespace İcerisiSampiyonsLigi
             // 
             // txtTakimAdi
             // 
-            this.txtTakimAdi.Location = new System.Drawing.Point(356, 325);
+            this.txtTakimAdi.Location = new System.Drawing.Point(341, 309);
             this.txtTakimAdi.Name = "txtTakimAdi";
             this.txtTakimAdi.Size = new System.Drawing.Size(136, 20);
             this.txtTakimAdi.TabIndex = 10;
@@ -137,7 +137,7 @@ namespace İcerisiSampiyonsLigi
             this.cmbTeamsinTeamColors.DisplayMember = "TeamName";
             this.cmbTeamsinTeamColors.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTeamsinTeamColors.FormattingEnabled = true;
-            this.cmbTeamsinTeamColors.Location = new System.Drawing.Point(97, 321);
+            this.cmbTeamsinTeamColors.Location = new System.Drawing.Point(85, 309);
             this.cmbTeamsinTeamColors.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTeamsinTeamColors.Name = "cmbTeamsinTeamColors";
             this.cmbTeamsinTeamColors.Size = new System.Drawing.Size(153, 21);
@@ -149,7 +149,7 @@ namespace İcerisiSampiyonsLigi
             this.cmbColorinTeamsColor.DisplayMember = "ColorName";
             this.cmbColorinTeamsColor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbColorinTeamsColor.FormattingEnabled = true;
-            this.cmbColorinTeamsColor.Location = new System.Drawing.Point(97, 355);
+            this.cmbColorinTeamsColor.Location = new System.Drawing.Point(85, 343);
             this.cmbColorinTeamsColor.Margin = new System.Windows.Forms.Padding(2);
             this.cmbColorinTeamsColor.Name = "cmbColorinTeamsColor";
             this.cmbColorinTeamsColor.Size = new System.Drawing.Size(153, 21);
@@ -172,7 +172,7 @@ namespace İcerisiSampiyonsLigi
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel2.LinkColor = System.Drawing.Color.LightSeaGreen;
-            this.linkLabel2.Location = new System.Drawing.Point(24, 359);
+            this.linkLabel2.Location = new System.Drawing.Point(12, 347);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(54, 17);
             this.linkLabel2.TabIndex = 30;
@@ -184,7 +184,7 @@ namespace İcerisiSampiyonsLigi
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.LightSeaGreen;
-            this.linkLabel1.Location = new System.Drawing.Point(24, 325);
+            this.linkLabel1.Location = new System.Drawing.Point(12, 313);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(61, 17);
             this.linkLabel1.TabIndex = 29;
@@ -193,7 +193,7 @@ namespace İcerisiSampiyonsLigi
             // 
             // txtAmblem
             // 
-            this.txtAmblem.Location = new System.Drawing.Point(356, 355);
+            this.txtAmblem.Location = new System.Drawing.Point(341, 339);
             this.txtAmblem.Name = "txtAmblem";
             this.txtAmblem.Size = new System.Drawing.Size(136, 20);
             this.txtAmblem.TabIndex = 31;
@@ -203,7 +203,7 @@ namespace İcerisiSampiyonsLigi
             this.linkLabel4.AutoSize = true;
             this.linkLabel4.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel4.LinkColor = System.Drawing.Color.LightSeaGreen;
-            this.linkLabel4.Location = new System.Drawing.Point(275, 328);
+            this.linkLabel4.Location = new System.Drawing.Point(265, 312);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(70, 17);
             this.linkLabel4.TabIndex = 29;
@@ -215,7 +215,7 @@ namespace İcerisiSampiyonsLigi
             this.linkLabel5.AutoSize = true;
             this.linkLabel5.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel5.LinkColor = System.Drawing.Color.LightSeaGreen;
-            this.linkLabel5.Location = new System.Drawing.Point(275, 355);
+            this.linkLabel5.Location = new System.Drawing.Point(265, 339);
             this.linkLabel5.Name = "linkLabel5";
             this.linkLabel5.Size = new System.Drawing.Size(60, 17);
             this.linkLabel5.TabIndex = 29;
@@ -294,7 +294,7 @@ namespace İcerisiSampiyonsLigi
             // 
             // txtDuzenleTakimAdi
             // 
-            this.txtDuzenleTakimAdi.Location = new System.Drawing.Point(597, 322);
+            this.txtDuzenleTakimAdi.Location = new System.Drawing.Point(341, 418);
             this.txtDuzenleTakimAdi.Name = "txtDuzenleTakimAdi";
             this.txtDuzenleTakimAdi.Size = new System.Drawing.Size(136, 20);
             this.txtDuzenleTakimAdi.TabIndex = 10;
@@ -304,7 +304,7 @@ namespace İcerisiSampiyonsLigi
             this.linkLabel3.AutoSize = true;
             this.linkLabel3.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel3.LinkColor = System.Drawing.Color.LightSeaGreen;
-            this.linkLabel3.Location = new System.Drawing.Point(516, 325);
+            this.linkLabel3.Location = new System.Drawing.Point(260, 421);
             this.linkLabel3.Name = "linkLabel3";
             this.linkLabel3.Size = new System.Drawing.Size(70, 17);
             this.linkLabel3.TabIndex = 29;
@@ -316,7 +316,7 @@ namespace İcerisiSampiyonsLigi
             this.linkLabel6.AutoSize = true;
             this.linkLabel6.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel6.LinkColor = System.Drawing.Color.LightSeaGreen;
-            this.linkLabel6.Location = new System.Drawing.Point(516, 352);
+            this.linkLabel6.Location = new System.Drawing.Point(260, 448);
             this.linkLabel6.Name = "linkLabel6";
             this.linkLabel6.Size = new System.Drawing.Size(60, 17);
             this.linkLabel6.TabIndex = 29;
@@ -325,7 +325,7 @@ namespace İcerisiSampiyonsLigi
             // 
             // txtAmblemDuzenle
             // 
-            this.txtAmblemDuzenle.Location = new System.Drawing.Point(597, 352);
+            this.txtAmblemDuzenle.Location = new System.Drawing.Point(341, 448);
             this.txtAmblemDuzenle.Name = "txtAmblemDuzenle";
             this.txtAmblemDuzenle.Size = new System.Drawing.Size(136, 20);
             this.txtAmblemDuzenle.TabIndex = 31;
@@ -377,7 +377,7 @@ namespace İcerisiSampiyonsLigi
             this.bunifuButton21.IdleIconLeftImage = null;
             this.bunifuButton21.IdleIconRightImage = null;
             this.bunifuButton21.IndicateFocus = false;
-            this.bunifuButton21.Location = new System.Drawing.Point(146, 465);
+            this.bunifuButton21.Location = new System.Drawing.Point(644, 366);
             this.bunifuButton21.Name = "bunifuButton21";
             this.bunifuButton21.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton21.OnDisabledState.BorderRadius = 1;
@@ -411,7 +411,7 @@ namespace İcerisiSampiyonsLigi
             this.bunifuButton21.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton21.OnPressedState.IconLeftImage = null;
             this.bunifuButton21.OnPressedState.IconRightImage = null;
-            this.bunifuButton21.Size = new System.Drawing.Size(371, 39);
+            this.bunifuButton21.Size = new System.Drawing.Size(93, 41);
             this.bunifuButton21.TabIndex = 35;
             this.bunifuButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton21.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;

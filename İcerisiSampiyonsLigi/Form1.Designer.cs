@@ -188,7 +188,7 @@ namespace İcerisiSampiyonsLigi
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(738, 370);
+            this.ClientSize = new System.Drawing.Size(664, 361);
             this.Controls.Add(this.btnFikstür);
             this.Controls.Add(this.btnRenk);
             this.Controls.Add(this.btnTakim);

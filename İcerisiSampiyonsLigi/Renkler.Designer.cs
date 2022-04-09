@@ -48,7 +48,7 @@ namespace İcerisiSampiyonsLigi
             // 
             this.nudB.Location = new System.Drawing.Point(259, 226);
             this.nudB.Maximum = new decimal(new int[] {
-            200,
+            255,
             0,
             0,
             0});
@@ -61,7 +61,7 @@ namespace İcerisiSampiyonsLigi
             // 
             this.nudg.Location = new System.Drawing.Point(259, 200);
             this.nudg.Maximum = new decimal(new int[] {
-            200,
+            255,
             0,
             0,
             0});
@@ -74,7 +74,7 @@ namespace İcerisiSampiyonsLigi
             // 
             this.nudR.Location = new System.Drawing.Point(259, 174);
             this.nudR.Maximum = new decimal(new int[] {
-            200,
+            255,
             0,
             0,
             0});

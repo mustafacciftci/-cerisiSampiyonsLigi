@@ -18,7 +18,7 @@ namespace İcerisiSampiyonsLigi
         {
             InitializeComponent();
             cmbTakimlar.DataSource = db.Teams.ToList();
-            dgvOyuncular.AutoGenerateColumns = false;
+            dgvOyuncularsz.AutoGenerateColumns = false;
             Listele();
             // Excel Expot 
             // Tabloları expoet et 
@@ -28,7 +28,7 @@ namespace İcerisiSampiyonsLigi
 
         private void Listele()
         {
-            dgvOyuncular.DataSource = db.Players.ToList();
+            dgvOyuncularsz.DataSource = db.Players.ToList();
             cmbDuzTakım.DataSource = db.Teams.ToList();
         }
 
@@ -63,7 +63,7 @@ namespace İcerisiSampiyonsLigi
         private void btnOyuncuDuzenle_Click(object sender, EventArgs e)
         {
             Player player = new Player();
-            player = (Player)dgvOyuncular.SelectedRows[0].DataBoundItem;
+            player = (Player)dgvOyuncularsz.SelectedRows[0].DataBoundItem;
             player.Mevkii = Convert.ToInt32(txtduzMevki.Text);
             player.PlayerName = txtdüzOyuncuAd.Text;
             player.Resim = txtDuzResim.Text;
@@ -74,10 +74,10 @@ namespace İcerisiSampiyonsLigi
 
         private void dgvOyunculars_SelectionChanged(object sender, EventArgs e)
         {
-            if (dgvOyuncular.SelectedRows.Count > 0)
+            if (dgvOyuncularsz.SelectedRows.Count > 0)
             {
                 Player player = new Player();
-                player = (Player)dgvOyuncular.SelectedRows[0].DataBoundItem;
+                player = (Player)dgvOyuncularsz.SelectedRows[0].DataBoundItem;
                 txtdüzOyuncuAd.Text = player.PlayerName;
                 txtDuzResim.Text = player.Resim;
                 txtduzMevki.Text = player.Mevkii.ToString();
@@ -87,11 +87,24 @@ namespace İcerisiSampiyonsLigi
         private void button1_Click(object sender, EventArgs e)
         {
             Player player2 = new Player();
-            player2 = (Player)dgvOyuncular.SelectedRows[0].DataBoundItem;
+            player2 = (Player)dgvOyuncularsz.SelectedRows[0].DataBoundItem;
             db.Players.Remove(player2);
             db.SaveChanges();
             Listele();
 
+
+        }
+
+        private void dgvOyuncularsz_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvOyuncularsz.SelectedRows.Count > 0)
+            {
+                Player player = new Player();
+                player = (Player)dgvOyuncularsz.SelectedRows[0].DataBoundItem;
+                txtdüzOyuncuAd.Text = player.PlayerName;
+                txtDuzResim.Text = player.Resim;
+                txtduzMevki.Text = player.Mevkii.ToString();
+            }
 
         }
     }

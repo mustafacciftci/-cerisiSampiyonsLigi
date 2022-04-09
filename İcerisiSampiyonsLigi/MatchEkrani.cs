@@ -20,7 +20,7 @@ namespace İcerisiSampiyonsLigi
             cmbTeam1inMatch.DataSource = db.Teams.ToList();
             cmbTeam2inMatch.DataSource = db.Teams.ToList();
             Listele();
-           // SkorAyari();
+            // SkorAyari();
         }
 
         private void SkorAyari()
@@ -48,58 +48,68 @@ namespace İcerisiSampiyonsLigi
 
         private void btnDashBoard_Click(object sender, EventArgs e)
         {
-            Match match = new Match();
-            var takim1= (Team)cmbTeam1inMatch.SelectedItem;
-            var takim2= (Team)cmbTeam2inMatch.SelectedItem;
-            match.MatchDate = dtpDate.Value;
-            match.MatchTime = dtpTime.Value;
-            match.Team1 = takim1;
-            match.Team2 = takim2;
-           
-            if (dtpDate.Value < DateTime.Now)
+            if (cmbTeam1inMatch.SelectedItem == cmbTeam2inMatch.SelectedItem)
             {
-                match.Score1 = (int)nudEv.Value;
-                match.Score2 = (int)nudDeplasman.Value;
+                MessageBox.Show("Takım Kendi İle Maç Yapamaz");
+
 
             }
             else
             {
-                match.Score1 = null;
-                match.Score2 = null;
-                match.Result = null;
 
-            }
-            if (nudEv.Value > nudDeplasman.Value)
-            {
-                match.Result = Result.Team1Wins;
-                takim1.Point += 3;
+                Match match = new Match();
+                var takim1 = (Team)cmbTeam1inMatch.SelectedItem;
+                var takim2 = (Team)cmbTeam2inMatch.SelectedItem;
+                match.MatchDate = dtpDate.Value;
+                match.MatchTime = dtpTime.Value;
+                match.Team1 = takim1;
+                match.Team2 = takim2;
 
-            }
-            else if (nudDeplasman.Value > nudEv.Value)
-            {
-                match.Result = Result.Team2Wins;
-                takim2.Point += 3;
-            }
-            else if (nudEv.Value ==-1)
-            {
-                takim1.Point += 0;
-                takim2.Point += 0;
-
-            }
-            else if (nudEv.Value != 0)
-            {
-                if (nudEv.Value == nudDeplasman.Value)
+                if (dtpDate.Value < DateTime.Now)
                 {
+                    match.Score1 = (int)nudEv.Value;
+                    match.Score2 = (int)nudDeplasman.Value;
 
-                match.Result = Result.Evenly;
-                takim1.Point += 1;
-                takim2.Point += 1;
                 }
+                else
+                {
+                    match.Score1 = null;
+                    match.Score2 = null;
+                    match.Result = null;
 
+                }
+                if (nudEv.Value > nudDeplasman.Value)
+                {
+                    match.Result = Result.Team1Wins;
+                    takim1.Point += 3;
+
+                }
+                else if (nudDeplasman.Value > nudEv.Value)
+                {
+                    match.Result = Result.Team2Wins;
+                    takim2.Point += 3;
+                }
+                else if (nudEv.Value == -1)
+                {
+                    takim1.Point += 0;
+                    takim2.Point += 0;
+
+                }
+                else if (nudEv.Value != 0)
+                {
+                    if (nudEv.Value == nudDeplasman.Value)
+                    {
+
+                        match.Result = Result.Evenly;
+                        takim1.Point += 1;
+                        takim2.Point += 1;
+                    }
+
+                }
+                db.Matches.Add(match);
+                db.SaveChanges();
+                Listele();
             }
-            db.Matches.Add(match);
-            db.SaveChanges();
-            Listele();
         }
 
         private void Listele()
@@ -109,10 +119,10 @@ namespace İcerisiSampiyonsLigi
 
         private void cmbTeam1inMatch_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
             var takim1 = (Team)cmbTeam1inMatch.SelectedItem;
             pboEv.ImageLocation = takim1.Amblem;
-            
+
         }
 
         private void cmbTeam2inMatch_SelectedIndexChanged(object sender, EventArgs e)

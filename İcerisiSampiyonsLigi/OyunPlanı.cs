@@ -26,12 +26,12 @@ namespace İcerisiSampiyonsLigi
             Team team = new Team();
             team = (Team)comboBox1.SelectedItem;
 
-            dataGridView1.DataSource = team.Players.OrderBy(x => x.Mevkii).ToList();
+            dgvOyunPlanı.DataSource = team.Players.OrderBy(x => x.Mevkii).ToList();
 
             Player player = new Player();
             for (int i = 1; i <= 11; i++)
             {
-                player = (Player)dataGridView1.Rows[i-1].DataBoundItem;
+                player = (Player)dgvOyunPlanı.Rows[i-1].DataBoundItem;
                 if (i == 1)
                 {
                     pbo1.ImageLocation = player.Resim;
@@ -97,7 +97,7 @@ namespace İcerisiSampiyonsLigi
         {
 
             Team team = new Team();
-            dataGridView1.DataSource = team.Players.ToList();
+            dgvOyunPlanı.DataSource = team.Players.ToList();
         }
     }
 }

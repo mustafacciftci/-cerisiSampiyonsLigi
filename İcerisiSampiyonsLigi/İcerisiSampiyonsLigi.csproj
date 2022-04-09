@@ -242,18 +242,6 @@
     <Compile Include="Takimlar.Designer.cs">
       <DependentUpon>Takimlar.cs</DependentUpon>
     </Compile>
-    <Compile Include="TakimlariDuzenle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TakimlariDuzenle.Designer.cs">
-      <DependentUpon>TakimlariDuzenle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TakimRengiEkle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TakimRengiEkle.Designer.cs">
-      <DependentUpon>TakimRengiEkle.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="CanlıFikstür.resx">
       <DependentUpon>CanlıFikstür.cs</DependentUpon>
     </EmbeddedResource>
@@ -306,12 +294,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Takimlar.resx">
       <DependentUpon>Takimlar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TakimlariDuzenle.resx">
-      <DependentUpon>TakimlariDuzenle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TakimRengiEkle.resx">
-      <DependentUpon>TakimRengiEkle.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\CanlıFikstür.datasource" />
